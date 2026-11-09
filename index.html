@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cybersecurity project portfolio of Chukwuemeka Samuel, focused on SOC operations, threat detection, digital forensics and security automation.">
+  <meta name="theme-color" content="#080e18">
+  <title>Chukwuemeka Samuel | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Chukwuemeka Samuel home"><span class="brand-mark">CS</span><span>SECURITY<span class="brand-muted"> / LAB</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#competitions">Competitions</a>
+        <a href="#learning">Practical Learning</a><a href="#certifications">Certifications</a><a href="#contact" class="nav-contact">Contact <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> CYBERSECURITY PROJECT PORTFOLIO <span class="eyebrow-line"></span></div>
+        <p class="hero-pretitle">Hello, I'm</p>
+        <h1>Chukwuemeka<br><span>Samuel.</span></h1>
+        <h2 class="hero-role">SOC Analyst Enthusiast <span class="cursor">_</span></h2>
+        <p class="hero-description">Investigating threats. Analysing evidence. Building practical security solutions. I use hands-on labs and projects to explore how security teams detect, investigate and respond to suspicious activity.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects <span>↓</span></a>
+          <a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="social-row">
+          <a href="#contact" data-placeholder="Your GitHub profile URL">GitHub <span>↗</span></a>
+          <a href="#contact" data-placeholder="Your LinkedIn profile URL">LinkedIn <span>↗</span></a>
+          <a href="#learning">TryHackMe <span>↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-console" aria-label="Portfolio focus areas">
+        <div class="console-top"><div class="window-dots"><i></i><i></i><i></i></div><span>analyst@security-lab: ~</span><span class="console-lock">⌑</span></div>
+        <div class="console-body">
+          <p class="console-line"><span class="console-prompt">➜</span> whoami</p>
+          <p class="console-output">SOC Analyst Enthusiast</p>
+          <p class="console-line"><span class="console-prompt">➜</span> focus --areas</p>
+          <div class="console-tags"><span>Threat Detection</span><span>Incident Investigation</span><span>Digital Forensics</span><span>Security Automation</span></div>
+          <p class="console-line"><span class="console-prompt">➜</span> current_status</p>
+          <p class="console-output"><span class="status-dot"></span> Building. Learning. Investigating.</p>
+          <div class="console-rule"></div>
+          <div class="console-metrics"><div><strong>03</strong><small>FEATURED PROJECTS</small></div><div><strong>50+</strong><small>THM ROOMS / LABS</small></div><div><strong>#02</strong><small>CTF PLACEMENT</small></div></div>
+        </div>
+      </aside>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section container about-section" id="about">
+      <div class="section-heading"><p class="section-kicker">01 / THE PERSON BEHIND THE LOGS</p><h2>Curiosity is the <span>starting point.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-lead"><p>I’m an aspiring cybersecurity professional drawn to the work that happens behind the alerts: understanding what happened, finding useful evidence and turning observations into clear security decisions.</p></div>
+        <div class="about-detail"><p>I enjoy learning by doing — investigating suspicious emails, examining endpoint activity, working through security challenges and building small tools that make repetitive analysis easier.</p><p>My current focus is developing practical capability across security monitoring, incident investigation and security automation, with the goal of contributing to a SOC or security operations team.</p><div class="focus-list"><span>01 <b>Monitor</b></span><span>02 <b>Investigate</b></span><span>03 <b>Improve</b></span></div></div>
+      </div>
+    </section>
+
+    <section class="section container projects-section" id="projects">
+      <div class="section-heading section-heading-row"><div><p class="section-kicker">02 / SELECTED WORK</p><h2>Projects & <span>investigations.</span></h2></div><p class="section-intro">A closer look at how I approach practical security problems — from the question that started each project to the evidence and lessons that came out of it.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-card-top"><span class="project-index">PROJECT_01</span><span class="project-type">EMAIL SECURITY</span></div>
+          <div class="project-icon"><span>✉</span></div>
+          <h3>Phishing Email Investigation</h3>
+          <p class="project-summary">A structured investigation of a simulated suspicious email, from header analysis and IOC extraction to threat-intelligence checks and a final verdict.</p>
+          <div class="tag-list"><span>Email headers</span><span>VirusTotal</span><span>CyberChef</span><span>IOC analysis</span></div>
+          <div class="project-card-bottom"><span class="evidence-count">4 evidence items</span><button class="text-link project-open" data-project="phishing">Explore investigation <span>↗</span></button></div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-index">PROJECT_02</span><span class="project-type">SECURITY MONITORING</span></div>
+          <div class="project-icon"><span>⌁</span></div>
+          <h3>Home SOC / Threat Detection Lab</h3>
+          <p class="project-summary">A small Windows-based SOC environment for generating events, collecting endpoint telemetry and investigating suspicious PowerShell activity.</p>
+          <div class="tag-list"><span>Splunk</span><span>Sysmon</span><span>Windows Logs</span><span>PowerShell</span></div>
+          <div class="project-card-bottom"><span class="evidence-count">6 evidence items</span><button class="text-link project-open" data-project="soc">Explore lab <span>↗</span></button></div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-index">PROJECT_03</span><span class="project-type">SECURITY AUTOMATION</span></div>
+          <div class="project-icon"><span>{ }</span></div>
+          <h3>Python IOC Enrichment Tool</h3>
+          <p class="project-summary">A proof-of-concept script that accepts an indicator, queries threat intelligence and presents useful enrichment in an analyst-friendly format.</p>
+          <div class="tag-list"><span>Python</span><span>REST APIs</span><span>JSON</span><span>VirusTotal API</span></div>
+          <div class="project-card-bottom"><span class="evidence-count">5 evidence items</span><button class="text-link project-open" data-project="ioc">Explore tool <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="section-footnote"><span class="status-dot"></span> Project evidence is being organised. Unavailable links are marked as placeholders — no demo or repository URL is implied.</p>
+    </section>
+
+    <section class="section container competition-section" id="competitions">
+      <div class="section-heading"><p class="section-kicker">03 / TESTING UNDER PRESSURE</p><h2>Competitions & <span>challenges.</span></h2></div>
+      <article class="competition-card">
+        <div class="competition-rank"><span>02</span><small>PLACE</small></div>
+        <div class="competition-content"><div class="competition-meta"><span class="live-label"><i></i> COMPETITION RESULT</span><span class="project-type">CTF</span></div><h3>SANS Capture The Flag</h3><p>Participated in a cybersecurity CTF featuring a mix of practical security challenges. Achieved second place while working through unfamiliar problems under time pressure.</p><div class="tag-list"><span>Web Security</span><span>OSINT</span><span>Network Analysis</span><span>Cryptography</span></div><div class="learning-note"><strong>What I took away</strong><p>A more systematic approach to unfamiliar problems, better prioritisation under time pressure and the value of testing assumptions before settling on an answer.</p></div><div class="evidence-links"><span>Evidence</span><a class="placeholder-link" href="#contact" data-placeholder="SANS CTF certificate">Certificate placeholder ↗</a><a class="placeholder-link" href="#contact" data-placeholder="Leaderboard / results screenshot">Results screenshot placeholder ↗</a><a class="placeholder-link" href="#contact" data-placeholder="Selected CTF challenge write-ups">Challenge write-ups placeholder ↗</a></div></div>
+      </article>
+    </section>
+
+    <section class="section container learning-section" id="learning">
+      <div class="section-heading"><p class="section-kicker">04 / LEARNING BY DOING</p><h2>Practical <span>learning.</span></h2><p class="section-intro wide">Hands-on labs are part of my ongoing practice. They are presented here as practical learning — not as professional certifications.</p></div>
+      <div class="learning-panel">
+        <div class="learning-number"><strong>50<span>+</span></strong><small>ROOMS & LABS COMPLETED</small><div class="learning-platform">TRYHACKME <span>↗</span></div><a class="button button-outline" href="#contact" data-placeholder="Your TryHackMe profile URL">Add profile URL <span>↗</span></a></div>
+        <div class="learning-details"><h3>Building practical security foundations.</h3><p>I use guided rooms and hands-on challenges to reinforce concepts, practise workflows and become more comfortable working with different systems and security scenarios.</p><div class="learning-areas"><span><i>01</i> SOC fundamentals</span><span><i>02</i> Networking</span><span><i>03</i> Linux</span><span><i>04</i> Windows</span><span><i>05</i> Web security</span><span><i>06</i> Digital forensics</span><span><i>07</i> Threat detection</span></div><div class="evidence-links"><span>Selected evidence</span><a class="placeholder-link" href="#contact" data-placeholder="Selected TryHackMe room write-ups">Room write-ups placeholder ↗</a><a class="placeholder-link" href="#contact" data-placeholder="Screenshots of completed TryHackMe challenges">Completion screenshots placeholder ↗</a></div></div>
+      </div>
+    </section>
+
+    <section class="section container certification-section" id="certifications">
+      <div class="section-heading section-heading-row"><div><p class="section-kicker">05 / STRUCTURED LEARNING</p><h2>Certification.</h2></div><p class="section-intro">A concise record of structured learning. Practical labs and competition results are documented separately above.</p></div>
+      <article class="cert-card"><div class="cert-symbol">THM</div><div class="cert-copy"><span class="cert-label">TRYHACKME</span><h3>SOC Level 1</h3><p>Completed to build a structured foundation in security operations, alert triage and incident handling.</p><div class="tag-list"><span>Network Security</span><span>Threats & Vulnerabilities</span><span>Security Operations</span><span>Incident Response</span></div></div><a class="placeholder-link cert-placeholder" href="#contact" data-placeholder="TryHackMe SOC Level 1 certificate">Certificate link placeholder ↗</a></article>
+    </section>
+
+    <section class="section container community-section" id="community">
+      <div class="section-heading"><p class="section-kicker">06 / CONTRIBUTING TO THE COMMUNITY</p><h2>Community & <span>collaboration.</span></h2></div>
+      <div class="community-card"><div class="community-icon">◎</div><div><span class="project-type">VOLUNTEERING</span><h3>Cybersecurity Community Volunteer</h3><p>Supported a community cybersecurity group by helping organise learning sessions, sharing useful resources and opportunities, and encouraging beginners as they work through their learning journeys.</p><div class="community-impact"><div><strong>Organise</strong><span>Helped coordinate learning sessions.</span></div><div><strong>Share</strong><span>Made learning resources and opportunities easier to discover.</span></div><div><strong>Support</strong><span>Helped beginners navigate early learning steps.</span></div></div><div class="evidence-links"><span>Evidence</span><a class="placeholder-link" href="#contact" data-placeholder="Community event screenshots">Event screenshots placeholder ↗</a><a class="placeholder-link" href="#contact" data-placeholder="Community session materials">Session materials placeholder ↗</a><a class="placeholder-link" href="#contact" data-placeholder="Community page or group link">Community page placeholder ↗</a></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><p class="section-kicker">07 / START A CONVERSATION</p><h2>Let's talk <span>security.</span></h2><p>Interested in my projects, have a security challenge to discuss, or recruiting for an entry-level SOC opportunity? I'd be glad to connect.</p><div class="contact-actions"><a class="button button-primary" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a><a class="button button-outline" href="#contact" data-placeholder="Your LinkedIn profile URL">Add LinkedIn URL <span>↗</span></a></div><div class="contact-links"><a href="#contact" data-placeholder="Your GitHub profile URL">GitHub URL needed ↗</a><a href="#contact" data-placeholder="Your LinkedIn profile URL">LinkedIn URL needed ↗</a><a href="#contact" data-placeholder="Your TryHackMe profile URL">TryHackMe URL needed ↗</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">CS</span><span>SECURITY<span class="brand-muted"> / LAB</span></span></a><span>Built to document practical security work.</span><span>© <span id="year"></span> Chukwuemeka Samuel</span></div></footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel"><button class="modal-close" data-close-modal aria-label="Close project details">×</button><div id="modalContent"></div></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
